@@ -18,7 +18,7 @@ import { useCollection } from 'react-firebase-hooks/firestore';
 import { db } from '../firebase';
 import SidebarOption from './SidebarOption';
 
-const Sidebar = () => {
+const Sidebar = ({ username }) => {
 	const [channels, loading, error] = useCollection(db.collection('rooms'));
 
 	return (
@@ -28,7 +28,7 @@ const Sidebar = () => {
 					<h2>SLACK CLONE</h2>
 					<h3>
 						<FiberManualRecord />
-						Aditya Shrivastava
+						{username}
 					</h3>
 				</SidebarInfo>
 				<Create />
