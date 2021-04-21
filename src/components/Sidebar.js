@@ -15,7 +15,7 @@ import {
 import React from 'react';
 import styled from 'styled-components';
 import { useCollection } from 'react-firebase-hooks/firestore';
-import { db } from '../firebase';
+import { db } from '../Firebase';
 import SidebarOption from './SidebarOption';
 
 const Sidebar = ({ username }) => {

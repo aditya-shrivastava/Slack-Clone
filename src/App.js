@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import Sidebar from './components/Sidebar';
 import Chat from './components/Chat';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from './firebase';
+import { auth } from './Firebase';
 import Login from './components/Login';
 import { CircularProgress } from '@material-ui/core';
 
